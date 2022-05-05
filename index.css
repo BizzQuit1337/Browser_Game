@@ -1,0 +1,93 @@
+.navigationRow {
+    width: 100vw;
+    height: 5vh;
+    padding-bottom: 10px;
+}
+
+.loginRow {
+    width: 100vw;
+    height: 15vh;
+}
+
+.button {
+    border: 0;
+    background-color: rgba(24, 30, 121, 0.712);
+    padding: 0 1rem;
+    height: 100%;
+    font-size: 1rem;
+    color: rgba(202, 202, 176, 0.836);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(17, 22, 82, 0.712);
+}
+
+.optionsRow {
+    width: 100%;
+    height: 50%;
+}
+
+.mainScreenRow {
+    width: 100%;
+    height: 50%;
+}
+
+.optionOneCol {
+    float: left;
+    width: 33%;
+    height: 100%;
+}
+
+.mainScreenCol {
+    float: left;
+    width: 33%;
+    height: 100%;
+}
+
+.graphics {
+    width: 100%;
+    height: 50%;
+}
+
+.graphicsOptions {
+    width: 100%;
+    height: 50%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.optionTwoCol {
+    float: left;
+    width: 33%;
+    height: 100%;
+
+}
+
+.optionButton {
+    border: 0;
+    background-color: rgba(79, 82, 117, 0.712);
+    height: 100%;
+    font-size: 2rem;
+    padding: 0 2rem;
+    color: rgba(202, 202, 176, 0.836);
+    cursor: pointer;
+} 
+
+.optionButton:hover {
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+.graphicButton {
+    border: 0;
+    background-color: rgba(110, 117, 187, 0.712);
+    height: 100%;
+    font-size: 1rem;
+    padding: 0 2rem;
+    color: rgba(202, 202, 176, 0.836);
+    cursor: pointer;
+} 
+
+.graphicButton:hover {
+    background-color: rgba(0, 0, 0, 0.856);
+}

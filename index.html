@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="navigationRow">
+        <button class="button">Contact</button>
+        <button class="button">Donate</button>
+        <button class="button">Information</button>
+    </div>
+    <div class="loginRow">
+        <form action="index.php" method="post">
+            <input type="text" id="name" name="name" placeholder="Enter a game name"> <br>
+            <input type="submit" value="Enter" onclick=save() class="button">
+        </form>
+        <button onclick=save() class="button">Enter Testing
+    </div>
+    <script>
+        function save(){
+            const previousName = localStorage.getItem('username');
+            const currentName = document.getElementById('name').value;
+
+            if (currentName == previousName){
+                location.href = 'home.html';
+            }else{
+                localStorage.setItem('username', (document.getElementById('name').value));
+                location.href = 'setup.html';
+            }
+
+            
+        }
+    </script>
+</body>
+</html>

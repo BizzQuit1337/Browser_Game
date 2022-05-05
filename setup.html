@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>setup</title>
+</head>
+<body>
+    <div class="navigationRow">
+        <button class="button">Contact</button>
+        <button class="button">Donate</button>
+        <button class="button">Information</button>
+    </div>
+    <div class="optionRow">
+        <button class="button" onclick=confirmClass1()>Class One
+        <button class="button" onclick=confirmClass2()>Class Two
+        <button class="button" onclick=confirmClass3()>Class Three
+    </div>
+    <script>
+        function confirmClass1(){
+            localStorage.setItem('class', 'classOne')
+            location.href = 'home.html';
+        }
+        function confirmClass2(){
+            localStorage.setItem('class', 'classTwo')
+            location.href = 'home.html';
+        }
+        function confirmClass3(){
+            localStorage.setItem('class', 'classThree')
+            location.href = 'home.html';
+        }
+    </script>
+</body>
+</html>
