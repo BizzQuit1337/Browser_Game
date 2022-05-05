@@ -9,14 +9,14 @@
 </head>
 <body>
     <div class="navigationRow">
-        <button class="button">home</button>
+        <button class="button" onclick=home()>home</button>
         <button class="button">Contact</button>
         <button class="button">Donate</button>
         <button class="button">Information</button>
     </div>
     <div class="mainScreenRow">
         <div class="optionOneCol">
-            <button class="optionButton">Options 1</button><br>
+            <button class="optionButton"onclick=gather()>Gather Resources</button><br>
             <button class="optionButton">Options 2</button><br>
             <button class="optionButton">Options 3</button><br>
         </div>
@@ -36,8 +36,13 @@
             <button class="optionButton">Options 3</button><br>
         </div>
     </div>
-    <div class="footRow">
-
-    </div>
+    <script>
+        function gather(){
+            location.href = 'gather.html';
+        }
+        function home(){
+            location.href = 'home.html';
+        }
+    </script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 ########### To be named browser game ###########
 ### Authors ###
+version: 0.0.1
 python version: 3.10.0
 date: 05/05/2022
 author: BizzQuit
@@ -21,5 +22,3 @@ each other.
 
 This game has only just begun and will hopefully keep progressing from humble beginings to
 the next AAA title (gotta dream big XD)
-
-

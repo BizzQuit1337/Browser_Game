@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Gathering</title>
+</head>
+<body>
+    <div class="navigationRow">
+        <button class="button" onclick=home()>home</button>
+        <button class="button">Contact</button>
+        <button class="button">Donate</button>
+        <button class="button">Information</button>
+    </div>
+    <div class="canvasRow">
+        <canvas width="800" height="500" style="border:1px solid #000"></canvas>
+    </div>
+    <script src="gatherGame.js"></script>
+    <script>
+        function home(){
+            location.href = 'home.html';
+        }
+    </script>
+</body>
+</html>
