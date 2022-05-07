@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <script src="JS/userClass.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -14,24 +15,28 @@
         <button class="button">Information</button>
     </div>
     <div class="loginRow">
-        <form action="index.php" method="post">
-            <input type="text" id="name" name="name" placeholder="Enter a game name"> <br>
-            <input type="submit" value="Enter" onclick=save() class="button">
-        </form>
-        <button onclick=save() class="button">Enter Testing
+        <form action="PHP/cookies.php" method="post">
+        <input type="text" id="name" name="name" placeholder="Enter a game name"> <br>
+        <button onclick=save() class="button">Enter Testing  
+        </form> 
+        <button onclick=save() class="button">Enter Testing 
     </div>
     <script>
         function save(){
             const previousName = localStorage.getItem('username');
             const currentName = document.getElementById('name').value;
-
             if (currentName == previousName){
+                const user = new User((document.getElementById('name').value))
+                document.Cookie = player=user; SameSite='None'; 'Secure'
+                //console.log(document.Cookie);
                 location.href = 'home.html';
             }else{
                 localStorage.setItem('username', (document.getElementById('name').value));
+                const user = new User((document.getElementById('name').value))
+                document.Cookie = player=user; SameSite='None'; 'Secure'
+                //console.log(document.Cookie);
                 location.href = 'setup.html';
             }
-
             
         }
     </script>
