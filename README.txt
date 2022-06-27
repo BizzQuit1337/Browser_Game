@@ -3,7 +3,7 @@
 version: 0.0.1
 python version: 3.10.0
 date: 05/05/2022
-author: BizzQuit
+author: Albert Brown
 
 ### Flavour text ###
 This is the frame work for a browser game that will be taking inpiration from ogame
